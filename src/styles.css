@@ -1,0 +1,204 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: cadetblue;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1, h2, h3 {
+  color: #2c3e50;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 20px auto;
+  background-color: honeydew;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#new-project-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#new-project {
+  flex: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border: 2px solid #bdc3c7;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#add-project {
+  padding: 10px 20px;
+  background-color: darkblue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#add-project:hover {
+  background-color: #2980b9;
+}
+
+.project-card {
+  background-color: mintcream;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-card span {
+  font-size: 20px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.project-card button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  margin-top: 12px;
+  background-color: #2ecc71;
+  color: white;
+  height: 34px;
+  width: 90px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.project-card button.delete {
+  background-color: #e74c3c;
+}
+
+.project-card button.edit {
+  background-color: #f39c12;
+}
+
+.project-card button:hover {
+  opacity: 0.9;
+}
+
+.project-card button.add-todo {
+  background-color: #3498db;
+}
+
+#projects-heading {
+  text-align: center;
+  font-size: 24px;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.todo-list {
+  margin-top: 10px;
+  padding-left: 15px;
+}
+
+.todo-list div {
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-list div span {
+  font-size: 16px;
+}
+
+.todo-list div button {
+  padding: 5px 10px;
+  font-size: 12px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#todo-dialog {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  padding: 30px;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  width: 360px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+#todo-dialog h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+#todo-dialog input, #todo-dialog select, #todo-dialog textarea {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #bdc3c7;
+  border-radius: 5px;
+}
+
+#todo-dialog select{
+  width: 86%;
+}
+
+#todo-dialog button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#todo-dialog button:hover {
+  background-color: #2980b9;
+}
+
+#close-dialog {
+  color: #e74c3c;
+  font-size: 32px;
+  position: absolute;
+  top: 44px;
+  right: 30px;
+}
+
+#close-dialog{
+  cursor: pointer;
+}
+.hidden {
+  display: none;
+}
+
+button:focus {
+  outline: none;
+}
